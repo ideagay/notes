@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>My Sample Project</title>
+        
+    </head>
+    <body>
+        <h1>My Sample Project</h1>
+
+        <script src="../bower_components/seajs/dist/sea.js"></script>
+        <script>
+            // Set configuration
+            seajs.use('./sea_fn', function(sea_fn) {
+                sea_fn.a(); // i am sea fn a
+            })
+        </script>
+    </body>
+</html>

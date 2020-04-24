@@ -1,4 +1,4 @@
-/*!
+ /*!
  * jQuery JavaScript Library v3.5.0
  * https://jquery.com/
  *
@@ -10835,7 +10835,11 @@ if ( typeof define === "function" && define.amd ) {
 	} );
 }
 
-
+if ( typeof define === "function" && !define.amd ) {
+	define( "jquery", [], function() {
+		return jQuery.noConflict(true);
+	} );
+}
 
 
 var
